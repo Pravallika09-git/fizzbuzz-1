@@ -7,7 +7,6 @@ import os
 import ast
 from flask_pymongo import PyMongo
 import requests
-#import myqueue
 app = Flask(__name__)
 
 app.config["MONGO_URI"] = "mongodb://mongodb:27017/myDatabase"
@@ -17,8 +16,6 @@ mongo = PyMongo(app)
 def hello():
 
 	try:
-
-		#producer.enqueue()
 		receive_data=request.data.decode('UTF-8')
 		print(receive_data)
 		receive_data=ast.literal_eval(receive_data)

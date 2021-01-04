@@ -16,6 +16,5 @@ while True:
             sleep(1)
         else:
             sleep(1)
-
     except:
         pass
