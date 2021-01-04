@@ -1,0 +1,3 @@
+To Start the docker for Fizzbuzz
+
+Run the command docker-compose up in the root folder after cloning the repository
